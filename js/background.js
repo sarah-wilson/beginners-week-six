@@ -2,7 +2,7 @@
 console.log('hello!')
 
 // three different variables for the different images
-var backgrounds = ['Hello World','Callback Cats','The Four Fridgeteers','Pastabilities','The Beige Cardis','Team Attenborough', 'Team ZKhenna']
+var teamnames = ['Hello World','Callback Cats','The Four Fridgeteers','Pastabilities','The Beige Cardis','Team Attenborough', 'Team ZKhenna']
 
 // Only fires logic after the page has fully loaded
 $( document ).ready(function(){
@@ -14,25 +14,16 @@ $( document ).ready(function(){
     console.log('I was clicked!')
 
     // this selects a randon background from above and stores it as the variable 'randomBackground'
-    var randomBackground = backgrounds[Math.floor(Math.random() * backgrounds.length)];
+    var randomName = teamnames[Math.floor(Math.random() * teamnames.length)];
     // this creates a string that css will understand to be a background url
-    //var imageUrl = "url('./images/" + randomBackground + ".jpg')"
-
-
-    // 2. using jquery, change the image url of the body background to the new one saved above
-    //$('body').css('background', imageUrl)
-
-
 
     // EXTENSION TASK!
     // 3. Change the text of the 'span' to be that of the photographer
     //   (hint, you should re-use randomBackground)
-    $('h1').text(randomBackground)
+    $('h1').text(randomName)
 
     // Double points if you replace '-' between their names with a space
-    var artist = randomBackground.replace(/-/g, ' ');
+    var artist = randomName.replace(/-/g, ' ');
     $('span').text(artist)
-
-
       })
     }) // here endeth the function
