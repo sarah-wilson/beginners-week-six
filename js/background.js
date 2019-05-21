@@ -2,7 +2,7 @@
 console.log('hello!')
 
 // three different variables for the different images
-var backgrounds = ['Team Hello World','Team Callback Cats','Team The Four Fridgeteers','Team Pastabilities','Team The Beige Cardis','Team Attenborough', 'Team ZKhenna']
+var backgrounds = ['Hello World','Callback Cats','The Four Fridgeteers','Pastabilities','The Beige Cardis','Team Attenborough', 'Team ZKhenna']
 
 // Only fires logic after the page has fully loaded
 $( document ).ready(function(){
@@ -16,11 +16,11 @@ $( document ).ready(function(){
     // this selects a randon background from above and stores it as the variable 'randomBackground'
     var randomBackground = backgrounds[Math.floor(Math.random() * backgrounds.length)];
     // this creates a string that css will understand to be a background url
-    var imageUrl = "url('./images/" + randomBackground + ".jpg')"
+    //var imageUrl = "url('./images/" + randomBackground + ".jpg')"
 
 
     // 2. using jquery, change the image url of the body background to the new one saved above
-    $('body').css('background', imageUrl)
+    //$('body').css('background', imageUrl)
 
 
 
