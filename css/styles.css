@@ -22,7 +22,7 @@ h1 {
   padding: 10px 30px;
   border-radius: 5px;
   border: none;
-  font-size: 26px;
+  font-size: 50px;
   text-transform: uppercase;
   color: #000000;
   background-color: #ffffff;
@@ -34,6 +34,7 @@ h1:hover {
 }
 
 p {
+  font-size: 40px;
   position: fixed;
   top: 100px;
   color: black;
