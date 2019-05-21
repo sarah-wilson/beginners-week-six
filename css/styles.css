@@ -1,5 +1,5 @@
 body {
-  background: url('../images/mike-yukhtenko.jpg') no-repeat center;
+  background color: white;
   background-size: cover;
   width: 100vw;
   height: 100vh;
@@ -38,4 +38,3 @@ p {
   bottom: 10px;
   color: #ffffff;
 }
-
